@@ -19,3 +19,8 @@ Useful links:
 * https://github.com/ahkarami/Deep-Learning-in-Production
 * https://fastapi.tiangolo.com/deployment/
 https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
+https://pythonspeed.com/articles/docker-connection-refused/
+
+sudo docker build -t fml-wright-api:latest .
+sudo docker run -d -p 5000:5000 fml-wright-api:latest
+http://127.0.0.1:5000
