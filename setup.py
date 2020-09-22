@@ -6,6 +6,8 @@ with open("README.md", "r") as fh:
 
 install_dependencies = [
     "joblib==0.16.0",
+    "fastapi==0.61.1",
+    "uvicorn==0.11.8"
 ]
 
 setuptools.setup(
