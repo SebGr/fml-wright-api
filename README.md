@@ -8,8 +8,8 @@ Using the interface class from __fml_wright__.
 
 uvicorn generator.app:app
 
-http://127.0.0.1:8000
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8000  
+http://127.0.0.1:8000/docs  
 
 Some links:
 * https://github.com/happilyeverafter95/pneumonia-detection
@@ -21,6 +21,6 @@ Some links:
 https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
 https://pythonspeed.com/articles/docker-connection-refused/
 
-sudo docker build -t fml-wright-api:latest .
-sudo docker run -d -p 5000:5000 fml-wright-api:latest
+sudo docker build -t fml-wright-api:latest .  
+sudo docker run -d -p 5000:5000 fml-wright-api:latest  
 http://0.0.0.0:5000
