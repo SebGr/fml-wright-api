@@ -11,7 +11,7 @@ uvicorn generator.app:app
 http://127.0.0.1:8000
 http://127.0.0.1:8000/docs
 
-Useful links:
+Some links:
 * https://github.com/happilyeverafter95/pneumonia-detection
 * https://www.machinecurve.com/index.php/2020/03/19/tutorial-how-to-deploy-your-convnet-classifier-with-keras-and-fastapi/
 * https://github.com/CSAILVision/gandissect
