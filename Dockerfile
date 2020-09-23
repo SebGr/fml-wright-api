@@ -4,8 +4,6 @@ COPY . /app
 
 WORKDIR /app
 
-COPY /home/sebastiaan/Projects/fml-wright-project/api_models/models/bicyclegan/complete_floorplan/ ./models
-
 RUN pip install -r requirements.txt
 
 RUN apt-get update && apt-get install -y \
