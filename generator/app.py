@@ -7,6 +7,7 @@ from PIL import Image
 from fastapi import FastAPI, File
 from fmlwright.core import data_sources
 from fmlwright.generator.run import run as build_generator
+import base64
 
 app = FastAPI()
 
@@ -38,6 +39,11 @@ async def predict_image(img_file: bytes = File(...)):
     predictions = generator.predict(image, 1)
     preds = {}
     for key, value in predictions.items():
-        preds[(key[0], int(key[1]))] = value.tostring()
+        if key[0] not in preds:
+            preds[key[0]] = {}
+        preds[key[0]][int(key[1])] = {
+            "image": base64.b64encode(value),
+            "shape": value.shape
+        }
 
-    return list(preds.keys())
+    return preds

@@ -18,8 +18,7 @@ Some links:
 * https://github.com/mtobeiyf/keras-flask-deploy-webapp
 * https://github.com/ahkarami/Deep-Learning-in-Production
 * https://fastapi.tiangolo.com/deployment/
-https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
-https://pythonspeed.com/articles/docker-connection-refused/
+* https://stackoverflow.com/questions/61333907/receiving-an-image-with-fast-api-processing-it-with-cv2-then-returning-it
 
 sudo docker build -t fml-wright-api:latest .  
 sudo docker run -d -p 5000:5000 fml-wright-api:latest  
