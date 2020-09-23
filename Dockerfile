@@ -4,9 +4,14 @@ COPY . /app
 
 WORKDIR /app
 
-run pip install -r requirements.txt
+COPY /home/sebastiaan/Projects/fml-wright-project/api_models/models/bicyclegan/complete_floorplan/ ./models
 
-cmd ["pip" "install" "git+https://github.com/SebGr/fml-wright.git"]
+RUN pip install -r requirements.txt
+
+RUN apt-get update && apt-get install -y \
+    libspatialindex-dev
+
+RUN pip install git+https://github.com/SebGr/fml-wright.git
 
 EXPOSE 5000
 

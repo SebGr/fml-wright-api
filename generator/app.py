@@ -10,6 +10,7 @@ app = FastAPI()
 config_generator = data_sources.load_yaml(Path("./config/complete_floorplan.yaml"))
 config_generator['settings']['input_shape'] = ast.literal_eval(config_generator['settings']['input_shape'])
 
+
 generator = build_generator(config_generator)
 
 
