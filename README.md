@@ -19,6 +19,8 @@ Some links:
 * https://github.com/ahkarami/Deep-Learning-in-Production
 * https://fastapi.tiangolo.com/deployment/
 * https://stackoverflow.com/questions/61333907/receiving-an-image-with-fast-api-processing-it-with-cv2-then-returning-it
+* https://github.com/David-Lor/FastAPI_LightningTalk-Notebook/blob/master/FastAPI.ipynb
+
 
 sudo docker build -t fml-wright-api:latest .  
 sudo docker run -d -p 5000:5000 fml-wright-api:latest  
