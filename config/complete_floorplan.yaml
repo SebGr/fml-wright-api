@@ -1,5 +1,5 @@
 settings:
-  models_directory: '/home/sebastiaan/Projects/fml-wright-project/generator_models/models/bicyclegan/complete_floorplan/'
+  models_directory: './models/bicyclegan/complete_floorplan/'
   categories: [
       'living_room'
   ]

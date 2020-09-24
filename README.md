@@ -8,8 +8,8 @@ Using the interface class from __fml_wright__.
 
 uvicorn generator.app:app
 
-http://127.0.0.1:8000
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8000  
+http://127.0.0.1:8000/docs  
 
 Some links:
 * https://github.com/happilyeverafter95/pneumonia-detection
@@ -18,9 +18,10 @@ Some links:
 * https://github.com/mtobeiyf/keras-flask-deploy-webapp
 * https://github.com/ahkarami/Deep-Learning-in-Production
 * https://fastapi.tiangolo.com/deployment/
-https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
-https://pythonspeed.com/articles/docker-connection-refused/
+* https://stackoverflow.com/questions/61333907/receiving-an-image-with-fast-api-processing-it-with-cv2-then-returning-it
+* https://github.com/David-Lor/FastAPI_LightningTalk-Notebook/blob/master/FastAPI.ipynb
 
-sudo docker build -t fml-wright-api:latest .
-sudo docker run -d -p 5000:5000 fml-wright-api:latest
-http://127.0.0.1:5000
+
+sudo docker build -t fml-wright-api:latest .  
+sudo docker run -d -p 5000:5000 fml-wright-api:latest  
+http://0.0.0.0:5000

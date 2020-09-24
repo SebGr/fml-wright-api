@@ -4,9 +4,12 @@ COPY . /app
 
 WORKDIR /app
 
-run pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
-cmd ["pip" "install" "git+https://github.com/SebGr/fml-wright.git"]
+RUN apt-get update && apt-get install -y \
+    libspatialindex-dev
+
+RUN pip install git+https://github.com/SebGr/fml-wright.git
 
 EXPOSE 5000
 
