@@ -1,14 +1,16 @@
 from fastapi import FastAPI
 
 from app.api.routes.router import api_router
-from app.core.event_handlers import (
-    start_app_handler,
-    stop_app_handler
-)
+from app.core.event_handlers import start_app_handler, stop_app_handler
 from app.core.logging import create_logger
 
 
 def create_app() -> FastAPI:
+    """Create the app.
+
+    Returns:
+        FastAPI app with routes and event handlers added.
+    """
     logger = create_logger()
 
     logger.info("Creating app.")
