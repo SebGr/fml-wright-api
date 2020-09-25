@@ -56,3 +56,6 @@ Some links that contained useful tidbits on this problem.
 * https://stackoverflow.com/questions/61333907/receiving-an-image-with-fast-api-processing-it-with-cv2-then-returning-it
 * https://github.com/David-Lor/FastAPI_LightningTalk-Notebook/blob/master/FastAPI.ipynb
 * https://github.com/eightBEC/fastapi-ml-skeleton
+
+## Further work
+Please see the 'Projects' page for further work.
