@@ -1,6 +1,6 @@
 name: fml-wright-api
 dependencies:
-  - python=3.8
+  - python=3.7
   - pip=20.1
   - libspatialindex=1.9.3
   - pip:
