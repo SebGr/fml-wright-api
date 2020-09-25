@@ -14,12 +14,17 @@ uvicorn generator.app:app
 
 It is then reachable through the below url.
 ```bash
-http://127.0.0.1:8000 
+http://127.0.0.1:8000
 ```
 
 To see the docs:
 ```bash
 http://127.0.0.1:8000/docs  
+```
+
+When developing:
+```bash
+uvicorn generator.app:app --reload
 ```
 
 ## Docker API

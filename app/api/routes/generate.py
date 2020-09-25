@@ -12,11 +12,13 @@ async def generate(request: Request, generate_payload: GeneratePayload):
     model = request.app.state.model
 
     image = np.array(generate_payload.image)
-    n_samples = request.n_samples
-    if request.categories:
+    n_samples = generate_payload.n_samples
+
+    categories = generate_payload.categories
+    if categories:
         predictions = model.predict(image,
                                     n_samples=n_samples,
-                                    categories=request["categories"])
+                                    categories=categories)
     else:
         predictions = model.predict(image, n_samples)
 
