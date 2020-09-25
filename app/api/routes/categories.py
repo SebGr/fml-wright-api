@@ -6,4 +6,12 @@ router = APIRouter()
 
 @router.get("/categories")
 async def categories(request: Request):
+    """
+    
+    Args:
+        request:
+
+    Returns:
+
+    """
     return request.app.state.model.categories
