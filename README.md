@@ -9,7 +9,7 @@ I have also added a docker build for the API.
 ## FastAPI API
 To start the api, do the following in the terminal.
 ```bash
-uvicorn generator.app:app
+uvicorn app.main:app
 ```
 
 It is then reachable through the below url.
@@ -24,7 +24,7 @@ http://127.0.0.1:8000/docs
 
 When developing:
 ```bash
-uvicorn generator.app:app --reload
+uvicorn app.main:app --reload
 ```
 
 ## Docker API
