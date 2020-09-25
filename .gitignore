@@ -114,5 +114,4 @@ logs/git
 .idea/
 results/
 
-models/
 *.h5
