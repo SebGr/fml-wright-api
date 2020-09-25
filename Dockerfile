@@ -9,7 +9,7 @@ RUN pip install .
 RUN apt-get update && apt-get install -y \
     libspatialindex-dev
 
-RUN pip install git+https://github.com/SebGr/fml-wright.git
+RUN pip install git+https://github.com/SebGr/fml-wright.git@0.1.0
 
 EXPOSE 5000
 
